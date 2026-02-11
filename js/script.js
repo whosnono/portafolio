@@ -98,3 +98,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Manejar scroll a secciones cuando se navega desde otra página
+window.addEventListener('load', function() {
+    // Esperamos a que todas las imágenes y recursos carguen
+    if (window.location.hash) {
+        // Agregamos un delay para asegurar que todo el contenido esté renderizado
+        setTimeout(function() {
+            const targetId = window.location.hash;
+            const element = document.querySelector(targetId);
+            
+            if (element) {
+                // Calcular la posición considerando el header fijo
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight - 20; // 20px de margen extra
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 100);
+    }
+});
