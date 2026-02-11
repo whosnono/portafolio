@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Sofia Belem Figueroa Hernández</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hola, soy <span class="highlight">Sofia Figueroa</span></h1>
+            <h2 class="hero-subtitle">Ingeniera en Sistemas</h2>
+            <p class="hero-description">
+                Apasionada por crear experiencias web interactivas y responsivas.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/whosnono" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <img src="https://file.garden/aKdRkj_hWBm_xmBo/foto_perfil" alt="Foto de Sofia Figueroa">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy Ingeniera en Sistemas de Información con interés en el desarrollo Frontend. 
+                        Mi objetivo es crear interfaces de usuario atractivas y funcionales que brinden una experiencia positiva a los usuarios.
+                    </p>
+                    <p>
+                        Con conocimientos en HTML, CSS, y JavaScript, 
+                        busco constantemente aprender nuevas tecnologías y mejorar mis habilidades 
+                        para ofrecer soluciones innovadoras.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML y CSS</h3>
+                    <p>Semántico y accesible</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM, Async</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Control de versiones</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-jira"></i> <!-- Icono de Jira -->
+                    <h3>Jira</h3>
+                    <p>Gestión de proyectos</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-figma"></i> <!-- Icono de Figma -->
+                    <h3>Figma</h3>
+                    <p>Diseño UI/UX</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-wordpress"></i> <!-- Icono de WordPress -->
+                    <h3>WordPress</h3>
+                    <p>CMS y desarrollo web</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://file.garden/aKdRkj_hWBm_xmBo/verdexpress/LogoUsuario" alt="VerdeXpress">
+                        <div class="project-overlay">
+                            <a href="./proyectos.html#verdexpress" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/tokwyoo/VerdeXpress" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>VerdeXpress</h3>
+                        <p>Aplicacion movil para registar parques donde la gente puede donar, ya sea monetariamente o en especie.</p>
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Firebase</span>
+                            <span>Jetpack Compose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://file.garden/aKdRkj_hWBm_xmBo/arcca/logo" alt="Arcca">
+                        <div class="project-overlay">
+                            <a href="./proyectos.html#arcca" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ilserascon/ProyectoReporteador" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Arcca</h3>
+                        <p>Es un sistema de gestion para una refaccionaria</p>
+                        <div class="project-tags">
+                            <span>Python/Django</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://file.garden/aKdRkj_hWBm_xmBo/portafolio/cafeteria" alt="Cafeteria">
+                        <div class="project-overlay">
+                            <a href="./proyectos.html#cafeteria" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/whosnono/Cafeteria" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cafeteria</h3>
+                        <p>Sitio web para una cafetería</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sofia Belem Figueroa Hernández. <br>Todos los derechos reservados. <br>Correo: sofiafig1103@gmail.com</p>
+            <div class="footer-links">
+                <a href="https://github.com/whosnono"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
