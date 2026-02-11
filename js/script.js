@@ -1,7 +1,15 @@
+const body = document.body;
 // Menú responsive
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
+
+body.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+        nav.classList.remove('active');
+        burger.classList.remove('toggle');
+    }
+});
 
 burger.addEventListener('click', () => {
     // Toggle Nav
